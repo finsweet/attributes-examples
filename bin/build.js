@@ -14,9 +14,9 @@ const entryPoints = ['src/cms/populate-external-data/index.ts'];
 const defaultSettings = {
   bundle: true,
   outdir: buildDirectory,
-  minify: production,
+  minify: false,
   sourcemap: !production,
-  target: production ? 'es6' : 'esnext',
+  target: 'esnext',
   entryPoints,
 };
 
